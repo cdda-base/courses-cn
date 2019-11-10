@@ -1,8 +1,9 @@
+#模板被应用后必须要改的内容
+baseurl: /courses-cn
 # This is the default format.
 # For more see: http://jekyllrb.com/docs/permalinks/
-
 permalink: /posts/:categories/:title/index.html
-paginate: 1
+paginate: 10
 paginate_path: "/blog/page:num/"
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
@@ -11,7 +12,12 @@ highlighter: rouge
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-
+title : CDDA幸存者基地
+tagline: 为幸存者提供资源的场所
+author :
+  name : CDDA幸存者基地
+  email : cddabase@outlook.com
+  github : cdda-base
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt
 # Most places will/should use BASE_PATH to make the urls
@@ -24,6 +30,19 @@ production_url : https://cddabase.site/
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
+busuanzi:
+  enable: true
+  src: //cdn.jsdelivr.net/npm/busuanzi/bsz.pure.mini.js
+  page_pv:
+    alert: 本页总阅读量
+    unit: 次
+  site_pv:
+    alert: 本站总访问量
+    unit: 次
+  site_uv:
+    alert: 本站总访客数
+    unit: 人次
+
 JB :
   version : 0.3.0
 
@@ -74,10 +93,7 @@ JB :
   # Set 'provider' to the comment provider you want to use.
   # Set 'provider' to false to turn commenting off globally.
   #
-  comments :
-    provider : disqus
-    disqus :
-      short_name : nagekar
+  
 
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
@@ -102,3 +118,4 @@ JB :
   # and include your custom code. Your custom file must be defined at:
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
+
