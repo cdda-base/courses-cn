@@ -4,7 +4,7 @@ layout: default
 
 <div class="box">
     <h1 class="post-title">{{ page.title }}</h1>
-    <span class="post-meta">{{ page.date | date:%Y年%m月%d日 %H:%M:%S,%z}} </span><hr/>
+    <span class="post-meta">{{ page.date | date:"%Y年%m月%d日 %H:%M:%S,%z"}} </span><hr/>
     <span class="post-meta">作者：{{ page.author }} </span><hr/>
     <span class="post-text">{{ content }}</span>
     {% include post-pagination.html %}
