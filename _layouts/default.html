@@ -136,13 +136,13 @@
             <div class="card">
               <header class="card-header">
                 <p class="card-header-title nice-title">
-                  同系列其它作品（修复中....）
+                  同系列其它作品（修复中.....）
                 </p>
               </header>
               <div class="card-content">
                 <div class="content nice-text">
                   <ul>
-                    {% assign pages_list = site.categories[page.categories][1] %}  
+                    {% assign pages_list = site.categories[page.categories[0]][1] %}  
   	                {% include JB/pages_list %}
                   </ul>
                 </div>
